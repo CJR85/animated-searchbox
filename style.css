@@ -26,6 +26,7 @@
   border-radius: 10px;
   height: 85px;
   position: relative;
+  overflow: hidden;
 }
 
 .searchbox input {
@@ -53,6 +54,7 @@
   position: absolute;
   bottom: 0;
   left: 285px;
+  animation: slider 6s linear infinite;
 }
 
 .slider div {
@@ -63,4 +65,28 @@
 
 .slider i {
   width: 25px;
+}
+
+@keyframes slider {
+  0% {
+    transform: translateY(-85px);
+  }
+  5% {
+    transform: translateY(0px);
+  }
+  30% {
+    transform: translateY(0px);
+  }
+  35% {
+    transform: translateY(85px);
+  }
+  65% {
+    transform: translateY(85px);
+  }
+  70% {
+    transform: translateY(170px);
+  }
+  100% {
+    transform: translateY(170px);
+  }
 }
