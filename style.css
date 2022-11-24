@@ -25,6 +25,7 @@
   align-items: center;
   border-radius: 10px;
   height: 85px;
+  position: relative;
 }
 
 .searchbox input {
@@ -46,4 +47,20 @@
   outline: 0;
   background: transparent;
   cursor: pointer;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 285px;
+}
+
+.slider div {
+  height: 85px;
+  display: flex;
+  align-items: center;
+}
+
+.slider i {
+  width: 25px;
 }
